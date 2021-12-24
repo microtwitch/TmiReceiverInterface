@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package de.com.fdm.grpc;
+
+option java_multiple_files = true;
+option java_package = "de.com.fdm.grpc.lib";
+option java_outer_classname = "ReceiverProto";
+
+service Consumer {
+  rpc consume(TwitchMessage) returns(Empty) {
+  }
+}
+
+service Receiver {
+  rpc register(Registration) returns(Empty){
+  }
+}
+
+message TwitchMessage {
+  string channel = 1;
+  string name = 2;
+  string text = 3;
+}
+
+message Registration {
+  string channel = 1;
+  string callback = 2;
+}
+
+message Empty {
+}
