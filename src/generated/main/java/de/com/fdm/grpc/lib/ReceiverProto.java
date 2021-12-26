@@ -40,14 +40,14 @@ public final class ReceiverProto {
     java.lang.String[] descriptorData = {
       "\n\016receiver.proto\022\017de.com.fdm.grpc\"<\n\rTwi" +
       "tchMessage\022\017\n\007channel\030\001 \001(\t\022\014\n\004name\030\002 \001(" +
-      "\t\022\014\n\004text\030\003 \001(\t\"1\n\014Registration\022\017\n\007chann" +
-      "el\030\001 \001(\t\022\020\n\010callback\030\002 \001(\t\"\007\n\005Empty2O\n\010C" +
-      "onsumer\022C\n\007consume\022\036.de.com.fdm.grpc.Twi" +
-      "tchMessage\032\026.de.com.fdm.grpc.Empty\"\0002O\n\010" +
-      "Receiver\022C\n\010register\022\035.de.com.fdm.grpc.R" +
-      "egistration\032\026.de.com.fdm.grpc.Empty\"\000B&\n" +
-      "\023de.com.fdm.grpc.libB\rReceiverProtoP\001b\006p" +
-      "roto3"
+      "\t\022\014\n\004text\030\003 \001(\t\"2\n\014Registration\022\020\n\010chann" +
+      "els\030\001 \003(\t\022\020\n\010callback\030\002 \001(\t\"\007\n\005Empty2O\n\010" +
+      "Consumer\022C\n\007consume\022\036.de.com.fdm.grpc.Tw" +
+      "itchMessage\032\026.de.com.fdm.grpc.Empty\"\0002O\n" +
+      "\010Receiver\022C\n\010register\022\035.de.com.fdm.grpc." +
+      "Registration\032\026.de.com.fdm.grpc.Empty\"\000B&" +
+      "\n\023de.com.fdm.grpc.libB\rReceiverProtoP\001b\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -64,7 +64,7 @@ public final class ReceiverProto {
     internal_static_de_com_fdm_grpc_Registration_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_de_com_fdm_grpc_Registration_descriptor,
-        new java.lang.String[] { "Channel", "Callback", });
+        new java.lang.String[] { "Channels", "Callback", });
     internal_static_de_com_fdm_grpc_Empty_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_de_com_fdm_grpc_Empty_fieldAccessorTable = new
