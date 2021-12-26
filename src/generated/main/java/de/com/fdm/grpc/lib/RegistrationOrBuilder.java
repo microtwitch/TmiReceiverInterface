@@ -8,16 +8,29 @@ public interface RegistrationOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string channel = 1;</code>
-   * @return The channel.
+   * <code>repeated string channels = 1;</code>
+   * @return A list containing the channels.
    */
-  java.lang.String getChannel();
+  java.util.List<java.lang.String>
+      getChannelsList();
   /**
-   * <code>string channel = 1;</code>
-   * @return The bytes for channel.
+   * <code>repeated string channels = 1;</code>
+   * @return The count of channels.
+   */
+  int getChannelsCount();
+  /**
+   * <code>repeated string channels = 1;</code>
+   * @param index The index of the element to return.
+   * @return The channels at the given index.
+   */
+  java.lang.String getChannels(int index);
+  /**
+   * <code>repeated string channels = 1;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the channels at the given index.
    */
   com.google.protobuf.ByteString
-      getChannelBytes();
+      getChannelsBytes(int index);
 
   /**
    * <code>string callback = 2;</code>

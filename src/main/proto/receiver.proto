@@ -23,7 +23,7 @@ message TwitchMessage {
 }
 
 message Registration {
-  string channel = 1;
+  repeated string channels = 1;
   string callback = 2;
 }
 
