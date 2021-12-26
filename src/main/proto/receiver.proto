@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package de.com.fdm.grpc;
+package de.com.fdm.grpc.receiver;
 
 option java_multiple_files = true;
-option java_package = "de.com.fdm.grpc.receiver";
+option java_package = "de.com.fdm.grpc.receiver.lib";
 option java_outer_classname = "ReceiverProto";
 
 service Consumer {
