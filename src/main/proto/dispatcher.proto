@@ -3,7 +3,7 @@ syntax = "proto3";
 package de.com.fdm.grpc;
 
 option java_multiple_files = true;
-option java_package = "de.com.fdm.grpc.lib";
+option java_package = "de.com.fdm.grpc.dispatcher";
 option java_outer_classname = "DispatcherProto";
 
 service Dispatcher {
