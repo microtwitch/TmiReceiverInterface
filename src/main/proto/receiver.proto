@@ -14,6 +14,9 @@ service Consumer {
 service Receiver {
   rpc register(Registration) returns(Empty){
   }
+
+  rpc unsubscribe(Registration) returns(Empty){
+  }
 }
 
 message TwitchMessage {
