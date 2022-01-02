@@ -21,8 +21,9 @@ service Receiver {
 
 message TwitchMessage {
   string channel = 1;
-  string name = 2;
-  string text = 3;
+  string userName = 2;
+  string userId = 3;
+  string text = 4;
 }
 
 message Registration {
